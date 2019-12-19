@@ -1,0 +1,514 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "EhrScape Electronic Health Record APIs",
+        "description": "A simple yet powerful services to store, retrieve and query health data",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsrest.ehrscape.com\/rest\/v1"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "CompositionResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "format": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "templateId": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "composition": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "lastVersion": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Meta": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "precedingHref": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "nextHref": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ActionRestResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "action": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "DateTime": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "SearchCriterion": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "value": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "DemographicsResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "action": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "JsonNode": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "PartiesResponseData": {
+                "type": "object",
+                "properties": {
+                    "dataEmpty": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "action": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "parties": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "PartyResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "action": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "party": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EhrResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "action": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "ehrId": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "ehrStatus": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EhrStatusDto": {
+                "type": "object",
+                "properties": {
+                    "subjectId": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "subjectNamespace": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "queryable": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "modifiable": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "FormResponseData": {
+                "type": "object",
+                "properties": {
+                    "form": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "FormsResponseData": {
+                "type": "object",
+                "properties": {
+                    "forms": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "form": {
+                "type": "object",
+                "properties": {
+                    "templateId": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "version": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "category": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "creator": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "schemaVersion": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "resources": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "FormResourceResponseData": {
+                "type": "object",
+                "properties": {
+                    "formName": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "formVersion": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "resource": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "PresentationRequestData": {
+                "type": "object",
+                "properties": {
+                    "queryRequestData": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "formData": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "QueryRequestData": {
+                "type": "object",
+                "properties": {
+                    "aql": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "aqlParameters": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "PresentationFormData": {
+                "type": "object",
+                "properties": {
+                    "formName": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "formVersion": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "QueryResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "aql": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "executedAql": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "aqlParameters": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "resultSet": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "SessionResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "action": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "sessionId": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EhrIdSessionResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "action": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "sessionId": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "ehrId": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "TaggedObjectsResponseData": {
+                "type": "object",
+                "properties": {
+                    "objects": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "action": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "tag": {
+                "type": "object",
+                "properties": {
+                    "tag": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "aqlPath": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "TaggingRequestData": {
+                "type": "object",
+                "properties": {
+                    "compositionUid": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "TagsResponseData": {
+                "type": "object",
+                "properties": {
+                    "tags": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "action": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "TemplateResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "webTemplate": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "TemplatesResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "templates": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "TemplateMetaData": {
+                "type": "object",
+                "properties": {
+                    "templateId": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "createdOn": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "WebTemplate": {
+                "type": "object",
+                "properties": {
+                    "tree": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "templateId": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "defaultLanguage": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "languages": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            }
+        }
+    }
+}
