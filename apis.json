@@ -1,0 +1,180 @@
+{
+    "name": "EhrScape",
+    "description": "<p>Health app development shouldn't be harder than other verticals. EhrScape is all about making awesome healthcare apps easy to build and integrate into your environment. Healthcare computing that just works. EhrScape handles all the hard bits, including detailed clinical models, semantic interoperability, vendor independent data storage, health data query and more. Our mission is to empower you to build amazing healthcare apps and services. Welcome aboard. We're just getting started and we've got very big plans!<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/EHRScape-Logo.png",
+    "tags": [
+        "api provider",
+        "have api",
+        "healthcare",
+        "relative data",
+        "service api",
+        "target"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ehrscape\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "EhrScape Clinical Decision Support APIs",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/EHRScape-Logo.png",
+            "humanURL": "http:\/\/ehrscape.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehrscape-clinical-decision-support-apis-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape-clinical-decision-support-apis.json"
+                }
+            ]
+        },
+        {
+            "name": "EhrScape Electronic Health Record APIs",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/EHRScape-Logo.png",
+            "humanURL": "http:\/\/ehrscape.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehrscape-electronic-health-record-apis-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape-electronic-health-record-apis.json"
+                }
+            ]
+        },
+        {
+            "name": "EhrScape Terminology APIs",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/EHRScape-Logo.png",
+            "humanURL": "http:\/\/ehrscape.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehrscape-terminology-apis-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape-terminology-apis.json"
+                }
+            ]
+        },
+        {
+            "name": "EhrScape",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/EHRScape-Logo.png",
+            "humanURL": "http:\/\/ehrscape.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehrscape-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape.json"
+                }
+            ]
+        },
+        {
+            "name": "Ehr Scape Electronic Health Record APIs",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/EHRScape-Logo.png",
+            "humanURL": "http:\/\/ehrscape.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehr-scape-electronic-health-record-apis-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehr-scape-electronic-health-record-apis.json"
+                }
+            ]
+        },
+        {
+            "name": "Ehr Scape Clinical Decision Support APIs",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/EHRScape-Logo.png",
+            "humanURL": "http:\/\/ehrscape.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehr-scape-clinical-decision-support-apis-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehr-scape-clinical-decision-support-apis.json"
+                }
+            ]
+        },
+        {
+            "name": "Ehr Scape Terminology APIs",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/EHRScape-Logo.png",
+            "humanURL": "http:\/\/ehrscape.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehr-scape-terminology-apis-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehr-scape-terminology-apis.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Contact Form",
+            "url": "https:\/\/www.ehrscape.com\/contact.html"
+        },
+        {
+            "type": "FAQ",
+            "url": "https:\/\/www.ehrscape.com\/index.html"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/ehrscape"
+        },
+        {
+            "type": "Privacy",
+            "url": "https:\/\/www.ehrscape.com\/privacy.html"
+        },
+        {
+            "type": "Terms Of Service",
+            "url": "https:\/\/www.ehrscape.com\/terms.html"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/ehrscape"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.ehrscape.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/ehrscape.com"
+        }
+    ]
+}
