@@ -1,0 +1,339 @@
+{
+    "id": "c69a5100d38798d119f1be3f3e077a47",
+    "name": "Ehr Scape Terminology APIs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "ea0fc09fc4454bd5c8b2808555580f45",
+            "name": "List of entities in an explicit version of a single code system",
+            "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystem\/{codeSystem}\/entities",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "codelist",
+                    "description": "Filter to results whose code exactly matches one of the codes in this list",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codeSystem",
+                    "description": "Identifying code of the codesystem",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codesystemversion",
+                    "description": "Version of the codesystem. Defaults to the newest version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "matchvalue",
+                    "description": "Filter to results that contain this value, either in code or description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page of results to return. Starts with 1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pagesize",
+                    "description": "Size of a single page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "rawModeData": ""
+        },
+        {
+            "id": "917fb510139eccfe8b2053f9a9e56fa0",
+            "name": "Returns details about a single entity",
+            "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystem\/{codeSystem}\/entity\/{entity}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "codeSystem",
+                    "description": "Identifying code of the codesystem",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codesystemversion",
+                    "description": "Version of the codesystem. Defaults to the newest version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "entity",
+                    "description": "code of the parent entity",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "rawModeData": ""
+        },
+        {
+            "id": "4beb2a00c5896e0c339d65397fcd3123",
+            "name": "List of all children of a single entity",
+            "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystem\/{codeSystem}\/entity\/{entity}\/children",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "codelist",
+                    "description": "Filter to results whose code exactly matches one of the codes in this list",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codeSystem",
+                    "description": "Identifying code of the codesystem",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codesystemversion",
+                    "description": "Version of the codesystem. Defaults to the newest version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "entity",
+                    "description": "code of the parent entity",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "matchvalue",
+                    "description": "Filter to results that contain this value, either in code or description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page of results to return. Starts with 1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pagesize",
+                    "description": "Size of a single page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "rawModeData": ""
+        },
+        {
+            "id": "aed8c37dced2376e15b305e6a1d005d9",
+            "name": "Resolves a list of entity codes with associated types into a list of actual entity codes",
+            "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystem\/{codeSystem}\/resolve",
+            "description": "<p>Resolves a list of entity codes with associated types into a list of actual entity codes<p>Each entity code in the input has an associated type. Depending on the type, the code will resolve to the following:<ul><li>fixed - itself<li>tree - itself and all its children<\/ul>",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "list of entities to be resolved",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codeSystem",
+                    "description": "Identifying code of the codesystem",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codesystemversion",
+                    "description": "Version of the codesystem. Defaults to the newest version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "rawModeData": ""
+        },
+        {
+            "id": "902e61af0e8f22adfa99bef4427c7a77",
+            "name": "Validates a list of entity codes in a given code system",
+            "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystem\/{codeSystem}\/validate",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "codeSystem",
+                    "description": "Identifying code of the codesystem",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "codesystemversion",
+                    "description": "Version of the codesystem. Defaults to the newest version",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "entities",
+                    "description": "Codes of the entities to validate",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4c6b84086a22aea53b1d209c7f16fa9",
+            "name": "Lists code systems matching a criteria",
+            "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystems",
+            "description": "Only the newest version of each code system will be returned",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "codelist",
+                    "description": "Filter to results whose code exactly matches one of the codes in this list",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "matchvalue",
+                    "description": "Filter to results that contain this value, either in code or description",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page of results to return. Starts with 1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pagesize",
+                    "description": "Size of a single page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "rawModeData": ""
+        }
+    ]
+}
