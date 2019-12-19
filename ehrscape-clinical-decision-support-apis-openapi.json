@@ -1,0 +1,88 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "EhrScape Clinical Decision Support APIs",
+        "description": "Lightweight CDS Services to support execution of clinical guidelines",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "GuideExecutionResults": {
+                "type": "object",
+                "properties": {
+                    "ehrId": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "results": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Guide": {
+                "type": "object",
+                "properties": {
+                    "references": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "purpose": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "use": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "misuse": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "persistResult": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "GuideExecutionResult": {
+                "type": "object",
+                "properties": {
+                    "archetypeElementReference": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "archetypeId": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "value": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            }
+        }
+    }
+}
