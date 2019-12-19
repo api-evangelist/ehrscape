@@ -1,0 +1,81 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "EhrScape Terminology APIs",
+        "description": "Validates and resolves terminology codes",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httprest.ehrscape.com\/terminology-adapter\/rest"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "ValidationError": {
+                "type": "object",
+                "properties": {
+                    "targetResource": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "message": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EntityDto": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "codeSystemCode": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "codeSystemVersion": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "description": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "QueryResultDto": {
+                "type": "object",
+                "properties": {
+                    "lastPage": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "items": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "RestResolvableEntity": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            }
+        }
+    }
+}
