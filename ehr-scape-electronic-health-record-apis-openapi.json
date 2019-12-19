@@ -1,0 +1,1597 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Ehr Scape Electronic Health Record APIs",
+        "description": "A simple yet powerful services to store, retrieve and query health data",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsrest.ehrscape.com\/rest\/v1"
+    ],
+    "paths": {
+        "\/composition": {
+            "post": {
+                "summary": "Creates a new OpenEhr composition.",
+                "description": "Creates a new openehr composition..",
+                "operationId": "CreateComposition",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    },
+                    {
+                        "name": "committerId",
+                        "in": "query",
+                        "description": "The external id of the committer user. If omitted, the current sessions logged in users external id will be used, if the user has one."
+                    },
+                    {
+                        "name": "committerName",
+                        "in": "query",
+                        "description": "The name of the committer user. If omitted, the current sessions logged in users name will be used."
+                    },
+                    {
+                        "name": "ehrId",
+                        "in": "query",
+                        "description": "The EHR id to save the composition into. Required if not already set on the current session by a preceding call."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "The format of the composition. Default: FLAT."
+                    },
+                    {
+                        "name": "templateId",
+                        "in": "query",
+                        "description": "OpenEhr template id for the composition. Required, unless the composition is in the RAW format, which has this information embedded."
+                    }
+                ]
+            }
+        },
+        "\/composition\/{uid}": {
+            "delete": {
+                "summary": "Deletes an existing OpenEhr composition.",
+                "description": "Deletes an existing openehr composition..",
+                "operationId": "DeleteComposition",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "committerId",
+                        "in": "query",
+                        "description": "The external id of the committer user. If omitted, the current sessions logged in users external id will be used, if the user has one."
+                    },
+                    {
+                        "name": "committerName",
+                        "in": "query",
+                        "description": "The name of the committer user. If omitted, the current sessions logged in users name will be used."
+                    },
+                    {
+                        "name": "uid",
+                        "in": "path",
+                        "description": "Composition UID to be deleted."
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Loads an OpenEhr composition.",
+                "description": "Loads an openehr composition..",
+                "operationId": "GetComposition",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "The format of the composition. Default: FLAT."
+                    },
+                    {
+                        "name": "uid",
+                        "in": "path",
+                        "description": "Composition UID to be deleted."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Updates an existing OpenEhr composition.",
+                "description": "Updates an existing openehr composition..",
+                "operationId": "UpdateComposition",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    },
+                    {
+                        "name": "committerId",
+                        "in": "query",
+                        "description": "The external id of the committer user. If omitted, the current sessions logged in users external id will be used, if the user has one."
+                    },
+                    {
+                        "name": "committerName",
+                        "in": "query",
+                        "description": "The name of the committer user. If omitted, the current sessions logged in users name will be used."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "The format of the composition. Default: FLAT."
+                    },
+                    {
+                        "name": "templateId",
+                        "in": "query",
+                        "description": "OpenEhr template id for the composition. Required, unless the composition is in the RAW format, which has this information embedded."
+                    },
+                    {
+                        "name": "uid",
+                        "in": "path",
+                        "description": "Composition UID to be deleted."
+                    }
+                ]
+            }
+        },
+        "\/demographics\/ehr\/{ehrId}\/party": {
+            "get": {
+                "summary": "Retrieves the demographics info for the specified party.",
+                "description": "Retrieves the demographics info for the specified party..",
+                "operationId": "GetPartyByEhrId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "when",
+                        "in": "query",
+                        "description": "The instant of time for which to return the information about the party in the ISO-8601 format (2014-03-03T15:05:43.992Z)."
+                    }
+                ]
+            }
+        },
+        "\/demographics\/party": {
+            "post": {
+                "summary": "Creates a new party record in the remote demographics store.",
+                "description": "Creates a new party record in the remote demographics store..",
+                "operationId": "AddParty",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Updates a party record in the remote demographics store.",
+                "description": "Updates a party record in the remote demographics store..",
+                "operationId": "UpdateParty",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    }
+                ]
+            }
+        },
+        "\/demographics\/party\/query": {
+            "get": {
+                "summary": "Queries the demographics store for matching parties, with the query parameters specified in the URL.",
+                "description": "Queries the demographics store for matching parties, with the query parameters specified in the url..",
+                "operationId": "QueryParties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "maxHits",
+                        "in": "query",
+                        "description": "Limit the query results to this many hits."
+                    },
+                    {
+                        "name": "parameters",
+                        "in": "query",
+                        "description": "Query parameters in the key1=value1&key2=value2 format"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Queries the demographics store for matching parties.",
+                "description": "Queries the demographics store for matching parties..",
+                "operationId": "QueryParties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    },
+                    {
+                        "name": "maxHits",
+                        "in": "query",
+                        "description": "Limit the query results to this many hits."
+                    }
+                ]
+            }
+        },
+        "\/demographics\/party\/{partyId}": {
+            "delete": {
+                "summary": "Deletes a party record from the remote demographics store.",
+                "description": "Deletes a party record from the remote demographics store..",
+                "operationId": "DeleteParty",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "partyId",
+                        "in": "path",
+                        "description": "The id of the party to delete."
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Retrieves the demographics info for the specified party.",
+                "description": "Retrieves the demographics info for the specified party..",
+                "operationId": "GetParty",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "partyId",
+                        "in": "path",
+                        "description": "The id of the party to delete."
+                    },
+                    {
+                        "name": "when",
+                        "in": "query",
+                        "description": "The instant of time for which to return the information about the party in the ISO-8601 format (2014-03-03T15:05:43.992Z)."
+                    }
+                ]
+            }
+        },
+        "\/ehr": {
+            "get": {
+                "summary": "Returns the EHR for the specified subject ID and namespace.",
+                "description": "Returns the ehr for the specified subject id and namespace..",
+                "operationId": "GetEhr",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subjectId",
+                        "in": "query",
+                        "description": "The subject ID whose EHR needs to be located"
+                    },
+                    {
+                        "name": "subjectNamespace",
+                        "in": "query",
+                        "description": "The namespace that the subject belongs to."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Creates a new EHR.",
+                "description": "Creates a new ehr..",
+                "operationId": "CreateEhr",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "committerName",
+                        "in": "query",
+                        "description": "The name of the committer user. If omitted, the current sessions logged in users name will be used."
+                    },
+                    {
+                        "name": "subjectId",
+                        "in": "query",
+                        "description": "The subject ID whose EHR needs to be located"
+                    },
+                    {
+                        "name": "subjectNamespace",
+                        "in": "query",
+                        "description": "The namespace that the subject belongs to."
+                    }
+                ]
+            }
+        },
+        "\/ehr\/status\/{ehrId}": {
+            "put": {
+                "summary": "Update EHR_STATUS of an EHR.",
+                "description": "Update ehr_status of an ehr..",
+                "operationId": "UpdateEhrStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    },
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    }
+                ]
+            }
+        },
+        "\/ehr\/{ehrId}": {
+            "get": {
+                "summary": "Returns information about the specified EHR.",
+                "description": "Returns information about the specified ehr..",
+                "operationId": "GetEhr",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    }
+                ]
+            }
+        },
+        "\/form": {
+            "get": {
+                "summary": "Lists Think!Ehr forms.",
+                "description": "Lists think!ehr forms..",
+                "operationId": "GetForms",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/form\/{name}\/{version}": {
+            "get": {
+                "summary": "Loads a Think!Ehr form.",
+                "description": "Loads a think!ehr form..",
+                "operationId": "GetForm",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The name of the form."
+                    },
+                    {
+                        "name": "resources",
+                        "in": "query",
+                        "description": "Which, if any, resources to expand. Possible values are NONE, ALL, SOURCE, BINARY or a comma-separated list of names of resources to load. Default: NONE."
+                    },
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": "The version of the form, such as 1.0.0."
+                    }
+                ]
+            }
+        },
+        "\/form\/{name}\/{version}\/resource\/{resource}": {
+            "get": {
+                "summary": "Loads a Think!Ehr form resource content.",
+                "description": "Loads a think!ehr form resource content..",
+                "operationId": "GetFormResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "envelope",
+                        "in": "query",
+                        "description": "Whether or not to wrap a response in a JSON object that includes meta-data, or just return the resource content (default)."
+                    },
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The name of the form."
+                    },
+                    {
+                        "name": "resource",
+                        "in": "path",
+                        "description": "The name of the form resource."
+                    },
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": "The version of the form, such as 1.0.0."
+                    }
+                ]
+            }
+        },
+        "\/import\/csv": {
+            "post": {
+                "summary": "Import CSV data.",
+                "description": "Import csv data..",
+                "operationId": "ImportData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    },
+                    {
+                        "name": "committerName",
+                        "in": "query",
+                        "description": "The name of the committer user. If omitted, the current sessions logged in users name will be used."
+                    },
+                    {
+                        "name": "composerName",
+                        "in": "query",
+                        "description": "Composer name (if not specified username is used instead)."
+                    },
+                    {
+                        "name": "converterLocale",
+                        "in": "query",
+                        "description": "Converter locale - specify when numeric values are formatted in a specific locale."
+                    },
+                    {
+                        "name": "subjectNamespace",
+                        "in": "query",
+                        "description": "The namespace that the subject belongs to."
+                    },
+                    {
+                        "name": "templateId",
+                        "in": "query",
+                        "description": "OpenEhr template id for the composition. Required, unless the composition is in the RAW format, which has this information embedded."
+                    },
+                    {
+                        "name": "templateLanguage",
+                        "in": "query",
+                        "description": "Template language"
+                    }
+                ]
+            }
+        },
+        "\/presentation": {
+            "post": {
+                "summary": "Returns presentation documents for a specified AQL query.",
+                "description": "Returns presentation documents for a specified aql query..",
+                "operationId": "GetPresentationDocuments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    }
+                ]
+            }
+        },
+        "\/query": {
+            "get": {
+                "summary": "Returns the results of the specified AQL query.",
+                "description": "Returns the results of the specified aql query..",
+                "operationId": "Query",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "aql",
+                        "in": "query",
+                        "description": "The AQL query to execute"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Querying with named parameter support.",
+                "description": "Querying with named parameter support..",
+                "operationId": "Query",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    }
+                ]
+            }
+        },
+        "\/session": {
+            "delete": {
+                "summary": "Closes an OpenEhr session.",
+                "description": "Closes an openehr session..",
+                "operationId": "Close",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Ehr",
+                        "in": "header",
+                        "description": "The ID of the session to close. Required if this is not specified via the sessionId query parameter."
+                    },
+                    {
+                        "name": "sessionId",
+                        "in": "query",
+                        "description": "The ID of the session to close. Required if this is not specified via the Ehr-Session HTTP header."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Creates a new OpenEhr session.",
+                "description": "Creates a new openehr session..",
+                "operationId": "Login",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "Password."
+                    },
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "Username."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Pings an OpenEhr session.",
+                "description": "Pings an openehr session..",
+                "operationId": "Ping",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Ehr",
+                        "in": "header",
+                        "description": "The ID of the session to close. Required if this is not specified via the sessionId query parameter."
+                    },
+                    {
+                        "name": "sessionId",
+                        "in": "query",
+                        "description": "The ID of the session to close. Required if this is not specified via the Ehr-Session HTTP header."
+                    }
+                ]
+            }
+        },
+        "\/session\/ehr\/{ehrId}": {
+            "put": {
+                "summary": "Sets the EHR on the session.",
+                "description": "Sets the ehr on the session..",
+                "operationId": "UseEhr",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Ehr",
+                        "in": "header",
+                        "description": "The ID of the session to close. Required if this is not specified via the sessionId query parameter."
+                    },
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "sessionId",
+                        "in": "query",
+                        "description": "The ID of the session to close. Required if this is not specified via the Ehr-Session HTTP header."
+                    }
+                ]
+            }
+        },
+        "\/session\/ehr\/{subjectNamespace}\/{subjectId}": {
+            "put": {
+                "summary": "Sets the EHR on the session (via subject namespace and ID).",
+                "description": "Sets the ehr on the session (via subject namespace and id)..",
+                "operationId": "FindAndUseEhr",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Ehr",
+                        "in": "header",
+                        "description": "The ID of the session to close. Required if this is not specified via the sessionId query parameter."
+                    },
+                    {
+                        "name": "sessionId",
+                        "in": "query",
+                        "description": "The ID of the session to close. Required if this is not specified via the Ehr-Session HTTP header."
+                    },
+                    {
+                        "name": "subjectId",
+                        "in": "path",
+                        "description": "The subject ID."
+                    },
+                    {
+                        "name": "subjectNamespace",
+                        "in": "path",
+                        "description": "The namespace where the subject ID lives."
+                    }
+                ]
+            }
+        },
+        "\/smart\/records\/{ehrId}\/{modelName}": {
+            "get": {
+                "summary": "Returns SMART records for a patient.",
+                "description": "Returns smart records for a patient..",
+                "operationId": "GetRecords",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "modelName",
+                        "in": "path",
+                        "description": "SMART model name."
+                    }
+                ]
+            }
+        },
+        "\/smart\/records\/{ehrId}\/{modelName}\/{recordId}": {
+            "get": {
+                "summary": "Returns specific SMART record for a patient.",
+                "description": "Returns specific smart record for a patient..",
+                "operationId": "GetRecord",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "modelName",
+                        "in": "path",
+                        "description": "SMART model name."
+                    },
+                    {
+                        "name": "recordId",
+                        "in": "path",
+                        "description": "Record id."
+                    }
+                ]
+            }
+        },
+        "\/tagging": {
+            "delete": {
+                "summary": "Delete a composition's tags.",
+                "description": "Delete a composition's tags..",
+                "operationId": "DeleteTags",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Returns objects matching the specified tags.",
+                "description": "Returns objects matching the specified tags..",
+                "operationId": "FindObjectsWithTags",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "includeCurrentlyDeleted",
+                        "in": "query",
+                        "description": "Whether or not to include compositions whose current (last) version is deleted. Default: true."
+                    },
+                    {
+                        "name": "includeDeletedVersions",
+                        "in": "query",
+                        "description": "Whether or not to include deleted composition versions. Default: true."
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "A collection of tags that the returned objects need to be tagged with (a conjunction). Separate them with ;"
+                    },
+                    {
+                        "name": "versionsToReturn",
+                        "in": "query",
+                        "description": "Which composition versions to return. Default: ALL_TAGGED_VERSIONS."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Tags the specified composition and\/or its sub-structures.",
+                "description": "Tags the specified composition and\/or its sub-structures..",
+                "operationId": "Tag",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    }
+                ]
+            }
+        },
+        "\/tagging\/{compositionUid}": {
+            "get": {
+                "summary": "Returns tags for the specified composition.",
+                "description": "Returns tags for the specified composition..",
+                "operationId": "GetTags",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "compositionUid",
+                        "in": "path",
+                        "description": "The ID of the composition whose tags to return."
+                    }
+                ]
+            }
+        },
+        "\/template": {
+            "get": {
+                "summary": "Gets all template ids.",
+                "description": "Gets all template ids..",
+                "operationId": "GetAllTemplates",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Uploads an operational template.",
+                "description": "Uploads an operational template..",
+                "operationId": "SaveTemplate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The composition to create, in one of the supported formats."
+                    }
+                ]
+            }
+        },
+        "\/template\/{templateId}": {
+            "delete": {
+                "summary": "Deletes an existing OpenEHR template.",
+                "description": "Deletes an existing openehr template..",
+                "operationId": "DeleteTemplate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "templateId",
+                        "in": "path",
+                        "description": "The ID of the template to delete."
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Loads an OpenEhr web template.",
+                "description": "Loads an openehr web template..",
+                "operationId": "GetTemplate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "defaultLanguage",
+                        "in": "query",
+                        "description": "The default language to generate the returned web template with."
+                    },
+                    {
+                        "name": "languages",
+                        "in": "query",
+                        "description": "Other languages to include in the returned web template, separated by a comma."
+                    },
+                    {
+                        "name": "templateId",
+                        "in": "path",
+                        "description": "The ID of the template to delete."
+                    }
+                ]
+            }
+        },
+        "\/template\/{templateId}\/example": {
+            "get": {
+                "summary": "Returns an example of data values for a web template.",
+                "description": "Returns an example of data values for a web template..",
+                "operationId": "GetTemplateExample",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "defaultLanguage",
+                        "in": "query",
+                        "description": "The default language to generate the returned web template with."
+                    },
+                    {
+                        "name": "exampleFilter",
+                        "in": "query",
+                        "description": "The type of example to produce - intended for input (sent to the server), output (received back from the server) etc."
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "The format of the composition. Default: FLAT."
+                    },
+                    {
+                        "name": "languages",
+                        "in": "query",
+                        "description": "Other languages to include in the returned web template, separated by a comma."
+                    },
+                    {
+                        "name": "templateId",
+                        "in": "path",
+                        "description": "The ID of the template to delete."
+                    }
+                ]
+            }
+        },
+        "\/view\/{ehrId}\/allergy": {
+            "get": {
+                "summary": "Gets allergies for a patient",
+                "description": "Gets allergies for a patient.",
+                "operationId": "GetAllergy",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return (default = 10, max = 100)"
+                    }
+                ]
+            }
+        },
+        "\/view\/{ehrId}\/blood_pressure": {
+            "get": {
+                "summary": "Gets recorded blood pressures for a patient",
+                "description": "Gets recorded blood pressures for a patient.",
+                "operationId": "GetBloodPressure",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Limit by date from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return (default = 10, max = 100)"
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "Limit by date to"
+                    }
+                ]
+            }
+        },
+        "\/view\/{ehrId}\/body_temperature": {
+            "get": {
+                "summary": "Gets recorded body temperatures for a patient",
+                "description": "Gets recorded body temperatures for a patient.",
+                "operationId": "GetBodyTemperature",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Limit by date from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return (default = 10, max = 100)"
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "Limit by date to"
+                    }
+                ]
+            }
+        },
+        "\/view\/{ehrId}\/height": {
+            "get": {
+                "summary": "Gets recorded heights for a patient",
+                "description": "Gets recorded heights for a patient.",
+                "operationId": "GetHeight",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Limit by date from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return (default = 10, max = 100)"
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "Limit by date to"
+                    }
+                ]
+            }
+        },
+        "\/view\/{ehrId}\/labs": {
+            "get": {
+                "summary": "Lab results",
+                "description": "Lab results.",
+                "operationId": "GetLabs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Limit by date from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return (default = 10, max = 100)"
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "Limit by date to"
+                    }
+                ]
+            }
+        },
+        "\/view\/{ehrId}\/medication": {
+            "get": {
+                "summary": "Gets medications prescribed for a a patient",
+                "description": "Gets medications prescribed for a a patient.",
+                "operationId": "GetMedication",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Limit by date from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return (default = 10, max = 100)"
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "Limit by date to"
+                    }
+                ]
+            }
+        },
+        "\/view\/{ehrId}\/problem": {
+            "get": {
+                "summary": "Gets problems\/diagnoses for a patient",
+                "description": "Gets problems\/diagnoses for a patient.",
+                "operationId": "GetProblem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Limit by date from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return (default = 10, max = 100)"
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "Limit by date to"
+                    }
+                ]
+            }
+        },
+        "\/view\/{ehrId}\/pulse": {
+            "get": {
+                "summary": "Gets pulse measurements for a patient",
+                "description": "Gets pulse measurements for a patient.",
+                "operationId": "GetPulse",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Limit by date from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return (default = 10, max = 100)"
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "Limit by date to"
+                    }
+                ]
+            }
+        },
+        "\/view\/{ehrId}\/spO2": {
+            "get": {
+                "summary": "Gets SpO2 measurements for a patient",
+                "description": "Gets spo2 measurements for a patient.",
+                "operationId": "GetSpO2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Limit by date from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return (default = 10, max = 100)"
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "Limit by date to"
+                    }
+                ]
+            }
+        },
+        "\/view\/{ehrId}\/weight": {
+            "get": {
+                "summary": "Gets recorded weights for a patient",
+                "description": "Gets recorded weights for a patient.",
+                "operationId": "GetWeight",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ehrId",
+                        "in": "path",
+                        "description": "EHR ID of the party to retrieve."
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Limit by date from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return (default = 10, max = 100)"
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "Limit by date to"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "CompositionResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "format": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "templateId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "composition": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastVersion": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Meta": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "precedingHref": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "nextHref": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ActionRestResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "DateTime": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "SearchCriterion": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "DemographicsResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "JsonNode": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "PartiesResponseData": {
+                "type": "object",
+                "properties": {
+                    "dataEmpty": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parties": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "PartyResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "party": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "EhrResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ehrId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ehrStatus": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "EhrStatusDto": {
+                "type": "object",
+                "properties": {
+                    "subjectId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subjectNamespace": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "queryable": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "modifiable": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "FormResponseData": {
+                "type": "object",
+                "properties": {
+                    "form": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "FormsResponseData": {
+                "type": "object",
+                "properties": {
+                    "forms": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "form": {
+                "type": "object",
+                "properties": {
+                    "templateId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "version": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdTimestamp": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "category": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "creator": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "schemaVersion": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "resources": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "FormResourceResponseData": {
+                "type": "object",
+                "properties": {
+                    "formName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "formVersion": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "resource": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "PresentationRequestData": {
+                "type": "object",
+                "properties": {
+                    "queryRequestData": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "formData": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "QueryRequestData": {
+                "type": "object",
+                "properties": {
+                    "aql": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "aqlParameters": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "PresentationFormData": {
+                "type": "object",
+                "properties": {
+                    "formName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "formVersion": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "QueryResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "aql": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "executedAql": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "aqlParameters": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "resultSet": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "SessionResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "sessionId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "EhrIdSessionResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "sessionId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ehrId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TaggedObjectsResponseData": {
+                "type": "object",
+                "properties": {
+                    "objects": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tag": {
+                "type": "object",
+                "properties": {
+                    "tag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "aqlPath": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TaggingRequestData": {
+                "type": "object",
+                "properties": {
+                    "compositionUid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TagsResponseData": {
+                "type": "object",
+                "properties": {
+                    "tags": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TemplateResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "webTemplate": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TemplatesResponseData": {
+                "type": "object",
+                "properties": {
+                    "meta": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "templates": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TemplateMetaData": {
+                "type": "object",
+                "properties": {
+                    "templateId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdOn": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "WebTemplate": {
+                "type": "object",
+                "properties": {
+                    "tree": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "templateId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "defaultLanguage": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "languages": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
