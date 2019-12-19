@@ -1,0 +1,219 @@
+{
+    "id": "8729be3f5419d53499e917ce1c1bffca",
+    "name": "Ehr Scape Clinical Decision Support APIs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "a2ecf13453683920b8c8df098ab784c9",
+            "name": "List available guides.",
+            "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide",
+            "description": "List available guides..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "rawModeData": ""
+        },
+        {
+            "id": "204c5676c59146e243daa6a4f477a13a",
+            "name": "Execute guide on given EHR IDs",
+            "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide\/execute\/{guideId}\/{ehrIds}",
+            "description": "Execute guide on given ehr ids.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Authorization",
+                    "description": "ThinkEhr credentials as HTTP Basic Authorization.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Ehr",
+                    "description": "Active Ehr Session token.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ehrIds",
+                    "description": "Comma separated list of EHR ids, * for all.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "guideId",
+                    "description": "Guide ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "persist",
+                    "description": "Should save result of execution into EHR?",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "rawModeData": ""
+        },
+        {
+            "id": "4cbd2dcc3cb3e3e90729debcff57be6f",
+            "name": "Uploads new guide definition.",
+            "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide\/upload",
+            "description": "Uploads new guide definition..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guide",
+                    "description": "Base64 encoded guide definition.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "rawModeData": ""
+        },
+        {
+            "id": "f5337083c039b93810c377d03e9416f8",
+            "name": "Deletes guide.",
+            "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide\/{guideId}",
+            "description": "Deletes guide..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guideId",
+                    "description": "Guide ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "rawModeData": ""
+        },
+        {
+            "id": "c5dabd06c574f5dfae7f55593fbab8ec",
+            "name": "Returns guide definition.",
+            "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide\/{guideId}\/gdl",
+            "description": "Returns guide definition..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guideId",
+                    "description": "Guide ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "rawModeData": ""
+        },
+        {
+            "id": "86c6df949437a539d83ce30722a23821",
+            "name": "Toggles default behaviour of persisting guide execution result.",
+            "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide\/{guideId}\/toggleGuidePersistence",
+            "description": "Toggles default behaviour of persisting guide execution result..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guideId",
+                    "description": "Guide ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "rawModeData": ""
+        }
+    ]
+}
