@@ -1,0 +1,193 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Ehr Scape Clinical Decision Support APIs",
+        "description": "Lightweight CDS Services to support execution of clinical guidelines",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources"
+    ],
+    "paths": {
+        "\/guide": {
+            "get": {
+                "summary": "List available guides.",
+                "description": "List available guides..",
+                "operationId": "GetGuides",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/guide\/execute\/{guideId}\/{ehrIds}": {
+            "get": {
+                "summary": "Execute guide on given EHR IDs",
+                "description": "Execute guide on given ehr ids.",
+                "operationId": "ExecuteGuide",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "ThinkEhr credentials as HTTP Basic Authorization."
+                    },
+                    {
+                        "name": "Ehr",
+                        "in": "header",
+                        "description": "Active Ehr Session token."
+                    },
+                    {
+                        "name": "ehrIds",
+                        "in": "path",
+                        "description": "Comma separated list of EHR ids, * for all."
+                    },
+                    {
+                        "name": "guideId",
+                        "in": "path",
+                        "description": "Guide ID."
+                    },
+                    {
+                        "name": "persist",
+                        "in": "query",
+                        "description": "Should save result of execution into EHR?"
+                    }
+                ]
+            }
+        },
+        "\/guide\/upload": {
+            "post": {
+                "summary": "Uploads new guide definition.",
+                "description": "Uploads new guide definition..",
+                "operationId": "UploadGuide",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guide",
+                        "in": "form",
+                        "description": "Base64 encoded guide definition."
+                    }
+                ]
+            }
+        },
+        "\/guide\/{guideId}": {
+            "delete": {
+                "summary": "Deletes guide.",
+                "description": "Deletes guide..",
+                "operationId": "DeleteGuide",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guideId",
+                        "in": "path",
+                        "description": "Guide ID."
+                    }
+                ]
+            }
+        },
+        "\/guide\/{guideId}\/gdl": {
+            "get": {
+                "summary": "Returns guide definition.",
+                "description": "Returns guide definition..",
+                "operationId": "GetGuideGDL",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guideId",
+                        "in": "path",
+                        "description": "Guide ID."
+                    }
+                ]
+            }
+        },
+        "\/guide\/{guideId}\/toggleGuidePersistence": {
+            "put": {
+                "summary": "Toggles default behaviour of persisting guide execution result.",
+                "description": "Toggles default behaviour of persisting guide execution result..",
+                "operationId": "ToggleGuidePersistence",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guideId",
+                        "in": "path",
+                        "description": "Guide ID."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GuideExecutionResults": {
+                "type": "object",
+                "properties": {
+                    "ehrId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Guide": {
+                "type": "object",
+                "properties": {
+                    "references": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "purpose": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "use": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "misuse": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "persistResult": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GuideExecutionResult": {
+                "type": "object",
+                "properties": {
+                    "archetypeElementReference": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "archetypeId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            }
+        }
+    }
+}
