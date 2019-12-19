@@ -1,0 +1,2045 @@
+{
+    "id": "cccc210ecb4d378e890c8ea522698581",
+    "name": "Ehr Scape Electronic Health Record APIs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "a5de8af7db585b8b1d4a73cb99f90479",
+            "name": "Creates a new OpenEhr composition.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/composition",
+            "description": "Creates a new openehr composition..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "committerId",
+                    "description": "The external id of the committer user. If omitted, the current sessions logged in users external id will be used, if the user has one.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "committerName",
+                    "description": "The name of the committer user. If omitted, the current sessions logged in users name will be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ehrId",
+                    "description": "The EHR id to save the composition into. Required if not already set on the current session by a preceding call.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "The format of the composition. Default: FLAT.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "templateId",
+                    "description": "OpenEhr template id for the composition. Required, unless the composition is in the RAW format, which has this information embedded.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "2464e6f8902f2ca64ea7da46af78aa85",
+            "name": "Deletes an existing OpenEhr composition.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/composition\/{uid}",
+            "description": "Deletes an existing openehr composition..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "committerId",
+                    "description": "The external id of the committer user. If omitted, the current sessions logged in users external id will be used, if the user has one.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "committerName",
+                    "description": "The name of the committer user. If omitted, the current sessions logged in users name will be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uid",
+                    "description": "Composition UID to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "70cc74bdb02873123e09ad5c7c4b4f27",
+            "name": "Loads an OpenEhr composition.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/composition\/{uid}",
+            "description": "Loads an openehr composition..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "The format of the composition. Default: FLAT.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uid",
+                    "description": "Composition UID to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "ff834ac11ef09086093d1aeaa69608e8",
+            "name": "Updates an existing OpenEhr composition.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/composition\/{uid}",
+            "description": "Updates an existing openehr composition..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "committerId",
+                    "description": "The external id of the committer user. If omitted, the current sessions logged in users external id will be used, if the user has one.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "committerName",
+                    "description": "The name of the committer user. If omitted, the current sessions logged in users name will be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "The format of the composition. Default: FLAT.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "templateId",
+                    "description": "OpenEhr template id for the composition. Required, unless the composition is in the RAW format, which has this information embedded.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uid",
+                    "description": "Composition UID to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "60d2548d2a9547a90edca09889a17c1b",
+            "name": "Retrieves the demographics info for the specified party.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/ehr\/{ehrId}\/party",
+            "description": "Retrieves the demographics info for the specified party..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "when",
+                    "description": "The instant of time for which to return the information about the party in the ISO-8601 format (2014-03-03T15:05:43.992Z).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "99a7894d3cfa45e967292bf64135233c",
+            "name": "Creates a new party record in the remote demographics store.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party",
+            "description": "Creates a new party record in the remote demographics store..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "c3ec8186531315d86321b49e17389f5b",
+            "name": "Updates a party record in the remote demographics store.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party",
+            "description": "Updates a party record in the remote demographics store..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "3524ed54a5e6a8b0020bad8d31bf148b",
+            "name": "Queries the demographics store for matching parties, with the query parameters specified in the URL.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party\/query",
+            "description": "Queries the demographics store for matching parties, with the query parameters specified in the url..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "maxHits",
+                    "description": "Limit the query results to this many hits.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "parameters",
+                    "description": "Query parameters in the key1=value1&key2=value2 format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "fb248f205991b3d0b4e86fc5004777f7",
+            "name": "Queries the demographics store for matching parties.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party\/query",
+            "description": "Queries the demographics store for matching parties..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxHits",
+                    "description": "Limit the query results to this many hits.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a93a3e24340701ba6a40912e9abdccf",
+            "name": "Deletes a party record from the remote demographics store.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party\/{partyId}",
+            "description": "Deletes a party record from the remote demographics store..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "partyId",
+                    "description": "The id of the party to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "c56c85e9c4141f2b58dc3d7fd88b8b5e",
+            "name": "Retrieves the demographics info for the specified party.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party\/{partyId}",
+            "description": "Retrieves the demographics info for the specified party..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "partyId",
+                    "description": "The id of the party to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "when",
+                    "description": "The instant of time for which to return the information about the party in the ISO-8601 format (2014-03-03T15:05:43.992Z).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "68af13072a9c836deef7cfd7a338612c",
+            "name": "Returns the EHR for the specified subject ID and namespace.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/ehr",
+            "description": "Returns the ehr for the specified subject id and namespace..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subjectId",
+                    "description": "The subject ID whose EHR needs to be located",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subjectNamespace",
+                    "description": "The namespace that the subject belongs to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "307dbf750814310c958b782f51879a63",
+            "name": "Creates a new EHR.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/ehr",
+            "description": "Creates a new ehr..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "committerName",
+                    "description": "The name of the committer user. If omitted, the current sessions logged in users name will be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subjectId",
+                    "description": "The subject ID whose EHR needs to be located",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subjectNamespace",
+                    "description": "The namespace that the subject belongs to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "94d0df431bc55fa54dfef8edd7afb48b",
+            "name": "Update EHR_STATUS of an EHR.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/ehr\/status\/{ehrId}",
+            "description": "Update ehr_status of an ehr..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "9b79ca0dff7ee2765323f8126993c97f",
+            "name": "Returns information about the specified EHR.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/ehr\/{ehrId}",
+            "description": "Returns information about the specified ehr..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "b75dcad27012dc4a8892721a3af021e6",
+            "name": "Lists Think!Ehr forms.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/form",
+            "description": "Lists think!ehr forms..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b92cef7584dd257b40068377a4ac458",
+            "name": "Loads a Think!Ehr form.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/form\/{name}\/{version}",
+            "description": "Loads a think!ehr form..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "The name of the form.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resources",
+                    "description": "Which, if any, resources to expand. Possible values are NONE, ALL, SOURCE, BINARY or a comma-separated list of names of resources to load. Default: NONE.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "The version of the form, such as 1.0.0.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "e239d8ab0419b8fe24613ddf5fe2db30",
+            "name": "Loads a Think!Ehr form resource content.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/form\/{name}\/{version}\/resource\/{resource}",
+            "description": "Loads a think!ehr form resource content..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "envelope",
+                    "description": "Whether or not to wrap a response in a JSON object that includes meta-data, or just return the resource content (default).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "The name of the form.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "resource",
+                    "description": "The name of the form resource.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "The version of the form, such as 1.0.0.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "419e0a2367b4f832bfd0d9e90074254d",
+            "name": "Import CSV data.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/import\/csv",
+            "description": "Import csv data..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "committerName",
+                    "description": "The name of the committer user. If omitted, the current sessions logged in users name will be used.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "composerName",
+                    "description": "Composer name (if not specified username is used instead).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "converterLocale",
+                    "description": "Converter locale - specify when numeric values are formatted in a specific locale.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subjectNamespace",
+                    "description": "The namespace that the subject belongs to.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "templateId",
+                    "description": "OpenEhr template id for the composition. Required, unless the composition is in the RAW format, which has this information embedded.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "templateLanguage",
+                    "description": "Template language",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "7c954ee88d788a9e9f7cc94eb8cdc6d4",
+            "name": "Returns presentation documents for a specified AQL query.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/presentation",
+            "description": "Returns presentation documents for a specified aql query..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "fdca603e103838e3ffeb89826c87125f",
+            "name": "Returns the results of the specified AQL query.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/query",
+            "description": "Returns the results of the specified aql query..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "aql",
+                    "description": "The AQL query to execute",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "f59ceb63ca62d2e35c24d2aeaa26156a",
+            "name": "Querying with named parameter support.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/query",
+            "description": "Querying with named parameter support..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b65391e967d8a424befaf47b65dd72c",
+            "name": "Closes an OpenEhr session.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/session",
+            "description": "Closes an openehr session..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Ehr",
+                    "description": "The ID of the session to close. Required if this is not specified via the sessionId query parameter.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sessionId",
+                    "description": "The ID of the session to close. Required if this is not specified via the Ehr-Session HTTP header.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "26741b0343b292db83e54d1bdcc076ec",
+            "name": "Creates a new OpenEhr session.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/session",
+            "description": "Creates a new openehr session..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "password",
+                    "description": "Password.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "username",
+                    "description": "Username.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "f8571a0b78e591b1f8f9df59693afaa1",
+            "name": "Pings an OpenEhr session.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/session",
+            "description": "Pings an openehr session..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Ehr",
+                    "description": "The ID of the session to close. Required if this is not specified via the sessionId query parameter.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sessionId",
+                    "description": "The ID of the session to close. Required if this is not specified via the Ehr-Session HTTP header.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "24165591008860f7653bd61886cf29f4",
+            "name": "Sets the EHR on the session.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/session\/ehr\/{ehrId}",
+            "description": "Sets the ehr on the session..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Ehr",
+                    "description": "The ID of the session to close. Required if this is not specified via the sessionId query parameter.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sessionId",
+                    "description": "The ID of the session to close. Required if this is not specified via the Ehr-Session HTTP header.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "1bdc3e0699a80dd7816c8b9dd7294b8b",
+            "name": "Sets the EHR on the session (via subject namespace and ID).",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/session\/ehr\/{subjectNamespace}\/{subjectId}",
+            "description": "Sets the ehr on the session (via subject namespace and id)..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Ehr",
+                    "description": "The ID of the session to close. Required if this is not specified via the sessionId query parameter.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sessionId",
+                    "description": "The ID of the session to close. Required if this is not specified via the Ehr-Session HTTP header.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subjectId",
+                    "description": "The subject ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "subjectNamespace",
+                    "description": "The namespace where the subject ID lives.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "73d7fdf81c6bc5cfc65e99f2940deaad",
+            "name": "Returns SMART records for a patient.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/smart\/records\/{ehrId}\/{modelName}",
+            "description": "Returns smart records for a patient..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelName",
+                    "description": "SMART model name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "6032e8dba02876db3466a5ddfcce2adf",
+            "name": "Returns specific SMART record for a patient.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/smart\/records\/{ehrId}\/{modelName}\/{recordId}",
+            "description": "Returns specific smart record for a patient..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "modelName",
+                    "description": "SMART model name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recordId",
+                    "description": "Record id.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "b301897d36082ea7b82136e4e70191af",
+            "name": "Delete a composition's tags.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/tagging",
+            "description": "Delete a composition's tags..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "1f9cc872732535d3a9297b7f71a2fea2",
+            "name": "Returns objects matching the specified tags.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/tagging",
+            "description": "Returns objects matching the specified tags..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "includeCurrentlyDeleted",
+                    "description": "Whether or not to include compositions whose current (last) version is deleted. Default: true.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includeDeletedVersions",
+                    "description": "Whether or not to include deleted composition versions. Default: true.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "A collection of tags that the returned objects need to be tagged with (a conjunction). Separate them with ;",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionsToReturn",
+                    "description": "Which composition versions to return. Default: ALL_TAGGED_VERSIONS.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "ee4d8afa48af2da539f14cbd9faa248c",
+            "name": "Tags the specified composition and\/or its sub-structures.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/tagging",
+            "description": "Tags the specified composition and\/or its sub-structures..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "95865c36b873967ba4d5592f3d80b2da",
+            "name": "Returns tags for the specified composition.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/tagging\/{compositionUid}",
+            "description": "Returns tags for the specified composition..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "compositionUid",
+                    "description": "The ID of the composition whose tags to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "cc1f72d035e5c6a5bd9d787476eafff4",
+            "name": "Gets all template ids.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/template",
+            "description": "Gets all template ids..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "6bac93db61531706102d96b6084eb9f6",
+            "name": "Uploads an operational template.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/template",
+            "description": "Uploads an operational template..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "The composition to create, in one of the supported formats.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "ca3d72a15452ce68724fb1ba1ea1b65e",
+            "name": "Deletes an existing OpenEHR template.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/template\/{templateId}",
+            "description": "Deletes an existing openehr template..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "templateId",
+                    "description": "The ID of the template to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "83273a9c7cc70810d920de8922b61836",
+            "name": "Loads an OpenEhr web template.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/template\/{templateId}",
+            "description": "Loads an openehr web template..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "defaultLanguage",
+                    "description": "The default language to generate the returned web template with.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "languages",
+                    "description": "Other languages to include in the returned web template, separated by a comma.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "templateId",
+                    "description": "The ID of the template to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "e5a0652c0ef0414e94e37a74d1fdf441",
+            "name": "Returns an example of data values for a web template.",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/template\/{templateId}\/example",
+            "description": "Returns an example of data values for a web template..",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "defaultLanguage",
+                    "description": "The default language to generate the returned web template with.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exampleFilter",
+                    "description": "The type of example to produce - intended for input (sent to the server), output (received back from the server) etc.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "The format of the composition. Default: FLAT.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "languages",
+                    "description": "Other languages to include in the returned web template, separated by a comma.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "templateId",
+                    "description": "The ID of the template to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "afcf6f5dc90b0dcd363792c4e5fbaed2",
+            "name": "Gets allergies for a patient",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/allergy",
+            "description": "Gets allergies for a patient.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return (default = 10, max = 100)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "0b1b03852dbb059701000502a09de9f2",
+            "name": "Gets recorded blood pressures for a patient",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/blood_pressure",
+            "description": "Gets recorded blood pressures for a patient.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Limit by date from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return (default = 10, max = 100)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to",
+                    "description": "Limit by date to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "09952615be9a20b3fb6ba50968c29089",
+            "name": "Gets recorded body temperatures for a patient",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/body_temperature",
+            "description": "Gets recorded body temperatures for a patient.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Limit by date from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return (default = 10, max = 100)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to",
+                    "description": "Limit by date to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "74b9d383df4c2972dc3c6acf14c03bfd",
+            "name": "Gets recorded heights for a patient",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/height",
+            "description": "Gets recorded heights for a patient.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Limit by date from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return (default = 10, max = 100)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to",
+                    "description": "Limit by date to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5a849f7acc3babfa3989caeede70499",
+            "name": "Lab results",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/labs",
+            "description": "Lab results.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Limit by date from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return (default = 10, max = 100)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to",
+                    "description": "Limit by date to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "7f81418c70858d1e28e40bdf7a751c93",
+            "name": "Gets medications prescribed for a a patient",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/medication",
+            "description": "Gets medications prescribed for a a patient.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Limit by date from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return (default = 10, max = 100)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to",
+                    "description": "Limit by date to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "5227a1a338ce95d97818eba456e3b345",
+            "name": "Gets problems\/diagnoses for a patient",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/problem",
+            "description": "Gets problems\/diagnoses for a patient.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Limit by date from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return (default = 10, max = 100)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to",
+                    "description": "Limit by date to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "72627d1443e0b08312ce5f82a6f4238a",
+            "name": "Gets pulse measurements for a patient",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/pulse",
+            "description": "Gets pulse measurements for a patient.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Limit by date from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return (default = 10, max = 100)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to",
+                    "description": "Limit by date to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "2b5288bfbc54304ee11bbb51bf1fac63",
+            "name": "Gets SpO2 measurements for a patient",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/spO2",
+            "description": "Gets spo2 measurements for a patient.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Limit by date from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return (default = 10, max = 100)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to",
+                    "description": "Limit by date to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        },
+        {
+            "id": "f40630037dbbee3089ed6d1b01943a7d",
+            "name": "Gets recorded weights for a patient",
+            "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/weight",
+            "description": "Gets recorded weights for a patient.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ehrId",
+                    "description": "EHR ID of the party to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Limit by date from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return (default = 10, max = 100)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "to",
+                    "description": "Limit by date to",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "rawModeData": ""
+        }
+    ]
+}
