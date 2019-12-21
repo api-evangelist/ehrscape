@@ -1,5 +1,5 @@
 {
-    "id": "cccc210ecb4d378e890c8ea522698581",
+    "id": "d3c1fd19fe08b1187634fad5ce3b6715",
     "name": "Ehr Scape Electronic Health Record APIs",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "a5de8af7db585b8b1d4a73cb99f90479",
+            "id": "ff3f12d32f7bd1037fc2fe5e0a34d4a6",
             "name": "Creates a new OpenEhr composition.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/composition",
             "description": "Creates a new openehr composition..",
@@ -72,11 +72,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "2464e6f8902f2ca64ea7da46af78aa85",
+            "id": "7bc50ceb06cc52acf95ff2a82e03812e",
             "name": "Deletes an existing OpenEhr composition.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/composition\/{uid}",
             "description": "Deletes an existing openehr composition..",
@@ -117,11 +117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "70cc74bdb02873123e09ad5c7c4b4f27",
+            "id": "9ce144825c87dc9c996b4680c9683743",
             "name": "Loads an OpenEhr composition.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/composition\/{uid}",
             "description": "Loads an openehr composition..",
@@ -155,11 +155,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "ff834ac11ef09086093d1aeaa69608e8",
+            "id": "5ce7eb0b536a8e05e69b2b10ee1a09e9",
             "name": "Updates an existing OpenEhr composition.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/composition\/{uid}",
             "description": "Updates an existing openehr composition..",
@@ -221,11 +221,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "60d2548d2a9547a90edca09889a17c1b",
+            "id": "011bc9d4d88d68d267b1b37ed653d062",
             "name": "Retrieves the demographics info for the specified party.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/ehr\/{ehrId}\/party",
             "description": "Retrieves the demographics info for the specified party..",
@@ -259,11 +259,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "99a7894d3cfa45e967292bf64135233c",
+            "id": "08b898d5120f212e6a9defe59b23c369",
             "name": "Creates a new party record in the remote demographics store.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party",
             "description": "Creates a new party record in the remote demographics store..",
@@ -290,11 +290,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "c3ec8186531315d86321b49e17389f5b",
+            "id": "b41f220f7b0939d14a08800f2513e7f7",
             "name": "Updates a party record in the remote demographics store.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party",
             "description": "Updates a party record in the remote demographics store..",
@@ -321,11 +321,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "3524ed54a5e6a8b0020bad8d31bf148b",
+            "id": "2e810b216a693bd57ae0801d4a730c14",
             "name": "Queries the demographics store for matching parties, with the query parameters specified in the URL.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party\/query",
             "description": "Queries the demographics store for matching parties, with the query parameters specified in the url..",
@@ -359,11 +359,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "fb248f205991b3d0b4e86fc5004777f7",
+            "id": "ee5bd74f7499d1dfc7318f60704e07ec",
             "name": "Queries the demographics store for matching parties.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party\/query",
             "description": "Queries the demographics store for matching parties..",
@@ -397,11 +397,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "5a93a3e24340701ba6a40912e9abdccf",
+            "id": "f0084ce61f6614b5c0537433586a228c",
             "name": "Deletes a party record from the remote demographics store.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party\/{partyId}",
             "description": "Deletes a party record from the remote demographics store..",
@@ -428,11 +428,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "c56c85e9c4141f2b58dc3d7fd88b8b5e",
+            "id": "6925b57aa0b3aa35c6c620328946d5ce",
             "name": "Retrieves the demographics info for the specified party.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/demographics\/party\/{partyId}",
             "description": "Retrieves the demographics info for the specified party..",
@@ -466,11 +466,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "68af13072a9c836deef7cfd7a338612c",
+            "id": "a6ae91a6909a7f01ef15b94e7cc6d65b",
             "name": "Returns the EHR for the specified subject ID and namespace.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/ehr",
             "description": "Returns the ehr for the specified subject id and namespace..",
@@ -504,11 +504,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "307dbf750814310c958b782f51879a63",
+            "id": "5d63a025a023f40f064f667df49eeaf7",
             "name": "Creates a new EHR.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/ehr",
             "description": "Creates a new ehr..",
@@ -549,11 +549,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "94d0df431bc55fa54dfef8edd7afb48b",
+            "id": "47e21314af42ded678fa31dfa2a03c51",
             "name": "Update EHR_STATUS of an EHR.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/ehr\/status\/{ehrId}",
             "description": "Update ehr_status of an ehr..",
@@ -587,11 +587,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "9b79ca0dff7ee2765323f8126993c97f",
+            "id": "5b68d96609be3bb19a54a9779662614d",
             "name": "Returns information about the specified EHR.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/ehr\/{ehrId}",
             "description": "Returns information about the specified ehr..",
@@ -618,11 +618,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "b75dcad27012dc4a8892721a3af021e6",
+            "id": "8b19b9fcf0e8d90dc14c7b61bd563b30",
             "name": "Lists Think!Ehr forms.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/form",
             "description": "Lists think!ehr forms..",
@@ -641,11 +641,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "3b92cef7584dd257b40068377a4ac458",
+            "id": "c8fadbed0e5688827c2123d8731fdc50",
             "name": "Loads a Think!Ehr form.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/form\/{name}\/{version}",
             "description": "Loads a think!ehr form..",
@@ -686,11 +686,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "e239d8ab0419b8fe24613ddf5fe2db30",
+            "id": "b2e2937a59f001b785f94542618ce964",
             "name": "Loads a Think!Ehr form resource content.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/form\/{name}\/{version}\/resource\/{resource}",
             "description": "Loads a think!ehr form resource content..",
@@ -738,11 +738,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "419e0a2367b4f832bfd0d9e90074254d",
+            "id": "29b717cb863d1127141fd254ef55237a",
             "name": "Import CSV data.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/import\/csv",
             "description": "Import csv data..",
@@ -811,11 +811,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "7c954ee88d788a9e9f7cc94eb8cdc6d4",
+            "id": "635f77e351b3dafaae2d0f28fa4ceb28",
             "name": "Returns presentation documents for a specified AQL query.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/presentation",
             "description": "Returns presentation documents for a specified aql query..",
@@ -842,11 +842,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "fdca603e103838e3ffeb89826c87125f",
+            "id": "c54e2f047433ec07eaa26696d0c9d4d7",
             "name": "Returns the results of the specified AQL query.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/query",
             "description": "Returns the results of the specified aql query..",
@@ -873,11 +873,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "f59ceb63ca62d2e35c24d2aeaa26156a",
+            "id": "2948e1c451f0f7a717247967e83f4bdd",
             "name": "Querying with named parameter support.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/query",
             "description": "Querying with named parameter support..",
@@ -904,11 +904,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "3b65391e967d8a424befaf47b65dd72c",
+            "id": "8cef9e4c47865cbc51be011baa24ef13",
             "name": "Closes an OpenEhr session.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/session",
             "description": "Closes an openehr session..",
@@ -942,11 +942,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "26741b0343b292db83e54d1bdcc076ec",
+            "id": "3094c59ab91d4a6960a8ce46affef035",
             "name": "Creates a new OpenEhr session.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/session",
             "description": "Creates a new openehr session..",
@@ -980,11 +980,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "f8571a0b78e591b1f8f9df59693afaa1",
+            "id": "7f0e0d5d58a80c99dd6ae514412969a9",
             "name": "Pings an OpenEhr session.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/session",
             "description": "Pings an openehr session..",
@@ -1018,11 +1018,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "24165591008860f7653bd61886cf29f4",
+            "id": "886ffe8b57dd6a530853e7f9abfe2481",
             "name": "Sets the EHR on the session.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/session\/ehr\/{ehrId}",
             "description": "Sets the ehr on the session..",
@@ -1063,11 +1063,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "1bdc3e0699a80dd7816c8b9dd7294b8b",
+            "id": "fd43c22b1feb0aece6994f916f098c76",
             "name": "Sets the EHR on the session (via subject namespace and ID).",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/session\/ehr\/{subjectNamespace}\/{subjectId}",
             "description": "Sets the ehr on the session (via subject namespace and id)..",
@@ -1115,11 +1115,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "73d7fdf81c6bc5cfc65e99f2940deaad",
+            "id": "c755622a1988875064eb71a27117987b",
             "name": "Returns SMART records for a patient.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/smart\/records\/{ehrId}\/{modelName}",
             "description": "Returns smart records for a patient..",
@@ -1153,11 +1153,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "6032e8dba02876db3466a5ddfcce2adf",
+            "id": "8f8f762d2033bcbc9c3ff2d46f3f18de",
             "name": "Returns specific SMART record for a patient.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/smart\/records\/{ehrId}\/{modelName}\/{recordId}",
             "description": "Returns specific smart record for a patient..",
@@ -1198,11 +1198,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "b301897d36082ea7b82136e4e70191af",
+            "id": "7908172de4404742ed4ad119112067e0",
             "name": "Delete a composition's tags.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/tagging",
             "description": "Delete a composition's tags..",
@@ -1229,11 +1229,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "1f9cc872732535d3a9297b7f71a2fea2",
+            "id": "0e60300d082698bf7afa426702687eda",
             "name": "Returns objects matching the specified tags.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/tagging",
             "description": "Returns objects matching the specified tags..",
@@ -1281,11 +1281,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "ee4d8afa48af2da539f14cbd9faa248c",
+            "id": "fe6800558ff476de3210a2ae8f21f5d4",
             "name": "Tags the specified composition and\/or its sub-structures.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/tagging",
             "description": "Tags the specified composition and\/or its sub-structures..",
@@ -1312,11 +1312,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "95865c36b873967ba4d5592f3d80b2da",
+            "id": "d0eb3a4e202757fb5a5ad21c3e5a5676",
             "name": "Returns tags for the specified composition.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/tagging\/{compositionUid}",
             "description": "Returns tags for the specified composition..",
@@ -1343,11 +1343,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "cc1f72d035e5c6a5bd9d787476eafff4",
+            "id": "ff5ca0ac719ba5753e7dc86164674773",
             "name": "Gets all template ids.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/template",
             "description": "Gets all template ids..",
@@ -1366,11 +1366,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "6bac93db61531706102d96b6084eb9f6",
+            "id": "75bf71b7a51deb6cc44d1becd6f61a1f",
             "name": "Uploads an operational template.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/template",
             "description": "Uploads an operational template..",
@@ -1397,11 +1397,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "ca3d72a15452ce68724fb1ba1ea1b65e",
+            "id": "609f929b69736fc59bf962c92a7fe8cd",
             "name": "Deletes an existing OpenEHR template.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/template\/{templateId}",
             "description": "Deletes an existing openehr template..",
@@ -1428,11 +1428,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "83273a9c7cc70810d920de8922b61836",
+            "id": "47f141191287aaa6378bccbc8d6ee782",
             "name": "Loads an OpenEhr web template.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/template\/{templateId}",
             "description": "Loads an openehr web template..",
@@ -1473,11 +1473,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "e5a0652c0ef0414e94e37a74d1fdf441",
+            "id": "b396e0970348287dcfb44cc823e45112",
             "name": "Returns an example of data values for a web template.",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/template\/{templateId}\/example",
             "description": "Returns an example of data values for a web template..",
@@ -1532,11 +1532,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "afcf6f5dc90b0dcd363792c4e5fbaed2",
+            "id": "5c5e915164672a6b36fd19d56615179a",
             "name": "Gets allergies for a patient",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/allergy",
             "description": "Gets allergies for a patient.",
@@ -1570,11 +1570,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "0b1b03852dbb059701000502a09de9f2",
+            "id": "ede56f4a954ed9c110ca57d71a5bcc21",
             "name": "Gets recorded blood pressures for a patient",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/blood_pressure",
             "description": "Gets recorded blood pressures for a patient.",
@@ -1622,11 +1622,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "09952615be9a20b3fb6ba50968c29089",
+            "id": "e69723ca905c417d45ee5d44dc83e481",
             "name": "Gets recorded body temperatures for a patient",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/body_temperature",
             "description": "Gets recorded body temperatures for a patient.",
@@ -1674,11 +1674,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "74b9d383df4c2972dc3c6acf14c03bfd",
+            "id": "472ce198a6c149791ae621006e63b3c1",
             "name": "Gets recorded heights for a patient",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/height",
             "description": "Gets recorded heights for a patient.",
@@ -1726,11 +1726,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "b5a849f7acc3babfa3989caeede70499",
+            "id": "58807ce0f69f6c4ed9e07b8c71a28512",
             "name": "Lab results",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/labs",
             "description": "Lab results.",
@@ -1778,11 +1778,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "7f81418c70858d1e28e40bdf7a751c93",
+            "id": "443b800acb9284521aacf6cf4e624578",
             "name": "Gets medications prescribed for a a patient",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/medication",
             "description": "Gets medications prescribed for a a patient.",
@@ -1830,11 +1830,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "5227a1a338ce95d97818eba456e3b345",
+            "id": "53f8653dc69befe374d45add51506d9e",
             "name": "Gets problems\/diagnoses for a patient",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/problem",
             "description": "Gets problems\/diagnoses for a patient.",
@@ -1882,11 +1882,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "72627d1443e0b08312ce5f82a6f4238a",
+            "id": "63e484d41d77ac8be18b9f1cee3144f1",
             "name": "Gets pulse measurements for a patient",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/pulse",
             "description": "Gets pulse measurements for a patient.",
@@ -1934,11 +1934,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "2b5288bfbc54304ee11bbb51bf1fac63",
+            "id": "5f33cd9bec64866f194d271f2126816b",
             "name": "Gets SpO2 measurements for a patient",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/spO2",
             "description": "Gets spo2 measurements for a patient.",
@@ -1986,11 +1986,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         },
         {
-            "id": "f40630037dbbee3089ed6d1b01943a7d",
+            "id": "0a703647318a83ebac8fac6882a7d33c",
             "name": "Gets recorded weights for a patient",
             "url": "httpsrest.ehrscape.com\/rest\/v1\/view\/{ehrId}\/weight",
             "description": "Gets recorded weights for a patient.",
@@ -2038,7 +2038,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cccc210ecb4d378e890c8ea522698581",
+            "collectionId": "d3c1fd19fe08b1187634fad5ce3b6715",
             "rawModeData": ""
         }
     ]
