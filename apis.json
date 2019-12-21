@@ -10,8 +10,8 @@
         "service api",
         "target"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ehrscape\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -25,11 +25,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehrscape-clinical-decision-support-apis-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape-clinical-decision-support-apis.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape-clinical-decision-support-apis.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ehrscape\/master\/ehrscape-clinical-decision-support-apis-openapi.json"
                 }
             ]
         },
@@ -43,11 +43,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehrscape-electronic-health-record-apis-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape-electronic-health-record-apis.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape-electronic-health-record-apis.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ehrscape\/master\/ehrscape-electronic-health-record-apis-openapi.json"
                 }
             ]
         },
@@ -61,11 +61,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehrscape-terminology-apis-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape-terminology-apis.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape-terminology-apis.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ehrscape\/master\/ehrscape-terminology-apis-openapi.json"
                 }
             ]
         },
@@ -79,11 +79,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehrscape-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehrscape.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ehrscape\/master\/ehrscape-openapi.json"
                 }
             ]
         },
@@ -97,11 +97,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehr-scape-electronic-health-record-apis-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehr-scape-electronic-health-record-apis.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehr-scape-electronic-health-record-apis.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ehrscape\/master\/ehr-scape-electronic-health-record-apis-openapi.json"
                 }
             ]
         },
@@ -115,11 +115,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehr-scape-clinical-decision-support-apis-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehr-scape-clinical-decision-support-apis.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehr-scape-clinical-decision-support-apis.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ehrscape\/master\/ehr-scape-clinical-decision-support-apis-openapi.json"
                 }
             ]
         },
@@ -133,17 +133,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ehr-scape-terminology-apis-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehr-scape-terminology-apis.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ehr-scape-terminology-apis.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ehrscape\/master\/ehr-scape-terminology-apis-openapi.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Contact Form",
             "url": "https:\/\/www.ehrscape.com\/contact.html"
