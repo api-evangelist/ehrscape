@@ -1,5 +1,5 @@
 {
-    "id": "c69a5100d38798d119f1be3f3e077a47",
+    "id": "cedea343e4a906cd206618acaaaa01cf",
     "name": "Ehr Scape Terminology APIs",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "ea0fc09fc4454bd5c8b2808555580f45",
+            "id": "41f4dcee180535b699130b80dc869f5e",
             "name": "List of entities in an explicit version of a single code system",
             "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystem\/{codeSystem}\/entities",
             "description": "",
@@ -72,11 +72,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "collectionId": "cedea343e4a906cd206618acaaaa01cf",
             "rawModeData": ""
         },
         {
-            "id": "917fb510139eccfe8b2053f9a9e56fa0",
+            "id": "ce20fe7404dd65036e9dba164edb7a00",
             "name": "Returns details about a single entity",
             "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystem\/{codeSystem}\/entity\/{entity}",
             "description": "",
@@ -117,11 +117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "collectionId": "cedea343e4a906cd206618acaaaa01cf",
             "rawModeData": ""
         },
         {
-            "id": "4beb2a00c5896e0c339d65397fcd3123",
+            "id": "1ebdac28fbd034d78965ccb282f50919",
             "name": "List of all children of a single entity",
             "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystem\/{codeSystem}\/entity\/{entity}\/children",
             "description": "",
@@ -190,11 +190,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "collectionId": "cedea343e4a906cd206618acaaaa01cf",
             "rawModeData": ""
         },
         {
-            "id": "aed8c37dced2376e15b305e6a1d005d9",
+            "id": "0b0ab51e0f44ec6efb873c6e4983e044",
             "name": "Resolves a list of entity codes with associated types into a list of actual entity codes",
             "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystem\/{codeSystem}\/resolve",
             "description": "<p>Resolves a list of entity codes with associated types into a list of actual entity codes<p>Each entity code in the input has an associated type. Depending on the type, the code will resolve to the following:<ul><li>fixed - itself<li>tree - itself and all its children<\/ul>",
@@ -235,11 +235,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "collectionId": "cedea343e4a906cd206618acaaaa01cf",
             "rawModeData": ""
         },
         {
-            "id": "902e61af0e8f22adfa99bef4427c7a77",
+            "id": "1d22f9cdac9dc74b0a433a564210c520",
             "name": "Validates a list of entity codes in a given code system",
             "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystem\/{codeSystem}\/validate",
             "description": "",
@@ -280,11 +280,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "collectionId": "cedea343e4a906cd206618acaaaa01cf",
             "rawModeData": ""
         },
         {
-            "id": "c4c6b84086a22aea53b1d209c7f16fa9",
+            "id": "2cb03dac627e2a251126155e97ad27f9",
             "name": "Lists code systems matching a criteria",
             "url": "httpsrest.ehrscape.com\/terminology-adapter\/rest\/terminology\/codesystems",
             "description": "Only the newest version of each code system will be returned",
@@ -332,7 +332,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c69a5100d38798d119f1be3f3e077a47",
+            "collectionId": "cedea343e4a906cd206618acaaaa01cf",
             "rawModeData": ""
         }
     ]
