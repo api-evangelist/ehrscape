@@ -1,5 +1,5 @@
 {
-    "id": "8729be3f5419d53499e917ce1c1bffca",
+    "id": "0f753a982a2ed571536e01bc4b2bd873",
     "name": "Ehr Scape Clinical Decision Support APIs",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "a2ecf13453683920b8c8df098ab784c9",
+            "id": "5336e8ed073a13598f0478cb9840d581",
             "name": "List available guides.",
             "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide",
             "description": "List available guides..",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "collectionId": "0f753a982a2ed571536e01bc4b2bd873",
             "rawModeData": ""
         },
         {
-            "id": "204c5676c59146e243daa6a4f477a13a",
+            "id": "a27d504906875c192965c34d7c69ee0f",
             "name": "Execute guide on given EHR IDs",
             "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide\/execute\/{guideId}\/{ehrIds}",
             "description": "Execute guide on given ehr ids.",
@@ -88,11 +88,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "collectionId": "0f753a982a2ed571536e01bc4b2bd873",
             "rawModeData": ""
         },
         {
-            "id": "4cbd2dcc3cb3e3e90729debcff57be6f",
+            "id": "c85bd8e71e9db977cc5f7c3175096ec2",
             "name": "Uploads new guide definition.",
             "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide\/upload",
             "description": "Uploads new guide definition..",
@@ -119,11 +119,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "collectionId": "0f753a982a2ed571536e01bc4b2bd873",
             "rawModeData": ""
         },
         {
-            "id": "f5337083c039b93810c377d03e9416f8",
+            "id": "ea4733698e60e04570095f896390999e",
             "name": "Deletes guide.",
             "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide\/{guideId}",
             "description": "Deletes guide..",
@@ -150,11 +150,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "collectionId": "0f753a982a2ed571536e01bc4b2bd873",
             "rawModeData": ""
         },
         {
-            "id": "c5dabd06c574f5dfae7f55593fbab8ec",
+            "id": "82e271ba3cd6ab7bf18fa4473b456f08",
             "name": "Returns guide definition.",
             "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide\/{guideId}\/gdl",
             "description": "Returns guide definition..",
@@ -181,11 +181,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "collectionId": "0f753a982a2ed571536e01bc4b2bd873",
             "rawModeData": ""
         },
         {
-            "id": "86c6df949437a539d83ce30722a23821",
+            "id": "fd0b0bbff865fbebcd7086cebd0f243c",
             "name": "Toggles default behaviour of persisting guide execution result.",
             "url": "httpsrest.ehrscape.com\/ThinkCDS\/services\/CDSResources\/guide\/{guideId}\/toggleGuidePersistence",
             "description": "Toggles default behaviour of persisting guide execution result..",
@@ -212,7 +212,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8729be3f5419d53499e917ce1c1bffca",
+            "collectionId": "0f753a982a2ed571536e01bc4b2bd873",
             "rawModeData": ""
         }
     ]
